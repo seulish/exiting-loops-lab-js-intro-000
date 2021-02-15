@@ -32,12 +32,3 @@ function findBy(array, findFn) {
   }
   return null
 }
-
-
-function find(array, criteriaFunc) {
-  for (let i = 0; i < array.length; i++) {
-    if (criteriaFunc(array[i])) {
-      return array[i]
-    }
-  }
-}
