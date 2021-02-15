@@ -26,7 +26,7 @@ function keepGoing(array, changeValue, skipValue) {
 // Hint: Check the test file to know the signature of the findFn and the type of its return value
 function findBy(array, findFn) {
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === findFn()) {
+    if (findFn(array[i])) {
       return array[i]
     }
   }
