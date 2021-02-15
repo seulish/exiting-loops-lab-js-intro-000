@@ -25,6 +25,19 @@ function keepGoing(array, changeValue, skipValue) {
 // Return null if the value isn't found.
 // Hint: Check the test file to know the signature of the findFn and the type of its return value
 function findBy(array, findFn) {
-
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === findFn()) {
+      return array[i]
+    }
+  }
   return null
+}
+
+
+function find(array, criteriaFunc) {
+  for (let i = 0; i < array.length; i++) {
+    if (criteriaFunc(array[i])) {
+      return array[i]
+    }
+  }
 }
